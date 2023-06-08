@@ -1,0 +1,11 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+header a {
+	text-decoration: none;
+	color: $color-dark;
+	font-family: $font-primary;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}

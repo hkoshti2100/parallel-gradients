@@ -1,0 +1,63 @@
+@use "../global/index" as *;
+
+header {
+	--gap-logo: 5px;
+	--height-icon: 20px;
+	--height-logo: 50px;
+	--height-logo-small: calc(var(--height-logo) * 0.75);
+	--padding-header: 20px;
+
+	$gap-logo: var(--gap-logo);
+	$height-icon: var(--height-icon);
+	$height-logo: var(--height-logo);
+	$height-logo-small: var(--height-logo-small);
+	$padding-header: var(--padding-header);
+
+	@include flex();
+	padding: $padding-header 0;
+
+	> * {
+		flex: 1 1 0;
+	}
+
+	> #logo {
+		@include flex(flex-start);
+		gap: $gap-logo;
+
+		> svg {
+			height: $height-logo;
+
+			& + svg {
+				height: $height-logo-small;
+			}
+		}
+	}
+
+	> nav {
+		@include flex(space-evenly);
+	}
+
+	> #search {
+		@include flex(flex-end);
+
+		> .share {
+			margin-right: $height-icon;
+			padding-right: $height-icon;
+			border-right: 1px solid $color-dark;
+		}
+	}
+
+	form {
+		@include flex();
+		gap: $height-icon;
+
+		> * {
+			@extend %form-resets;
+		}
+	}
+
+	.share svg,
+	form button svg {
+		height: $height-icon;
+	}
+}

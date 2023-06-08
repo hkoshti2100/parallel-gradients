@@ -29,7 +29,6 @@ header a {
 
 .container-main {
   width: min(1440px, 85%);
-  margin: 0 auto;
 }
 
 header form > * {
