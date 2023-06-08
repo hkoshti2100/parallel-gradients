@@ -1,0 +1,80 @@
+:root {
+    // ---------------- colors ----------------
+	// --color-primary: ;
+	// --color-secondary: ;
+	// --color-accent: ;
+
+	--color-light: white;
+	--color-dark: black;
+
+	// --color-text: ;
+	// --color-bg: ;
+
+	// --color-info: ;
+	// --color-message: ;
+	// --color-success: ;
+	// --color-warning: ;
+	// --color-error: ;
+
+	// ---------------- typography ----------------
+	--font-primary: "Oxanium";
+	// --font-secondary: ;
+
+	// --font-sans: ;
+	// --font-sans-serif: ;
+	// --font-monospace: ;
+	// --font-cursive: ;
+	// --font-script: ;
+	// --font-display: ;
+
+	// --font-thin: ;
+	// --font-light: ;
+	// --font-regular: ;
+	// --font-medium: ;
+	// --font-bold: ;
+	// --font-thick: ;
+}
+
+// ---------------- colors ----------------
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-accent: var(--color-accent);
+
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+
+$color-text: var(--color-text);
+$color-bg: var(--color-bg);
+
+$color-info: var(--color-info);
+$color-message: var(--color-message);
+$color-success: var(--color-success);
+$color-warning: var(--color-warning);
+$color-error: var(--color-error);
+
+// ---------------- typography ----------------
+$font-primary: var(--font-primary);
+$font-secondary: var(--font-secondary);
+
+$font-sans: var(--font-sans);
+$font-sans-serif: var(--font-sans-serif);
+$font-monospace: var(--font-monospace);
+$font-cursive: var(--font-cursive);
+$font-script: var(--font-script);
+$font-display: var(--font-display);
+
+$font-thin: var(--font-thin);
+$font-light: var(--font-light);
+$font-regular: var(--font-regular);
+$font-medium: var(--font-medium);
+$font-bold: var(--font-bold);
+$font-thick: var(--font-thick);
+
+// ---------------- layout ----------------
+// 280px
+// 320px
+// 375px
+// 480px
+// 768px
+// 1024px
+// 1440px

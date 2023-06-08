@@ -1,0 +1,16 @@
+$font-directory: "../resources/fonts";
+
+@font-face {
+	$font-path: $font-directory + "/oxanium/";
+	
+	font-family: "Oxanium";
+	src: url($font-path + "Oxanium-Regular.eot");
+	src: url($font-path + "Oxanium-Regular.eot?#iefix") format("embedded-opentype"),
+		url($font-path + "Oxanium-Regular.woff2") format("woff2"),
+		url($font-path + "Oxanium-Regular.woff") format("woff"),
+		url($font-path + "Oxanium-Regular.ttf") format("truetype"),
+		url($font-path + "Oxanium-Regular.svg#Oxanium-Regular") format("svg");	
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

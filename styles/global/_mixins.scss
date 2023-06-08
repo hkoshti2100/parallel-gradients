@@ -1,0 +1,20 @@
+@mixin mp($margin: 0, $padding: 0) {
+	margin: $margin;
+	padding: $padding;
+}
+
+@mixin size($width: null, $height: null) {
+	width: $width;
+	height: $height;
+}
+
+@mixin square($length) {
+	width: $length;
+	height: $length;
+}
+
+@mixin flex($main: center, $cross: center) {
+	display: flex;
+	justify-content: $main;
+	align-items: $cross;
+}
