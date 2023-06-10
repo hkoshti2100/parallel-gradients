@@ -18,3 +18,19 @@
 	justify-content: $main;
 	align-items: $cross;
 }
+
+@mixin border-inside($width: 2px, $style: solid, $color: black, $pill: true) {
+	& {
+		position: relative;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		border: $width $style $color;
+		@if $pill {
+			border-radius: 100vmax;
+		}
+	}
+}

@@ -1,6 +1,44 @@
 @use "mixins" as *;
+@use "variables" as *;
 
 *, *::before, *::after {
 	box-sizing: border-box;
-	@include mp()
+	@include mp();
+	font-family: $font-secondary;
 }
+
+body {
+	height: 100vh;
+	height: 100dvh;
+	
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+main {
+	@include flex(flex-start);
+}
+
+h1, .h1 {
+	margin: 0;
+}
+
+// h2, .h2 {
+	
+// }
+
+// h3, .h3 {
+	
+// }
+
+// h4, .h4 {
+	
+// }
+
+// h5, .h5 {
+	
+// }
+
+// h6, .h6 {
+	
+// }

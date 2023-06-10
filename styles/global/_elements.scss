@@ -1,5 +1,6 @@
 @use "variables" as *;
 @use "mixins" as *;
+@use "classes" as *;
 
 header a {
 	text-decoration: none;
@@ -8,4 +9,23 @@ header a {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.btn {
+	@extend %pill-shape;
+	display: inline-block;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+}
+
+.btn-primary {
+	@extend .btn;
+	background-color: $color-dark;
+	color: $color-light;
+}
+
+.btn-secondary {
+	@extend .btn;
+	@include border-inside(2px, solid, $color-dark, $pill: true);
+	color: $color-dark;
 }

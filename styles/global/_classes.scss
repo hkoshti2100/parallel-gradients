@@ -1,3 +1,6 @@
+@use "mixins" as *;
+@use "variables" as *;
+
 .container-main {
 	width: min(1440px, 85%);
 	margin: 0 auto;
@@ -6,4 +9,8 @@
 %form-resets {
 	background-color: transparent;
 	border: 0;
+}
+
+%pill-shape {
+	border-radius: 100vmax;
 }
