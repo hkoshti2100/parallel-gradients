@@ -1,0 +1,17 @@
+@use "../global/index" as *;
+
+footer {
+	@include flex(space-between);
+	padding: 40px 0;
+	font-weight: 500;
+
+	> .more,
+	> .notification {
+		@include flex();
+		gap: 30px;
+
+		> svg {
+			height: 40px;
+		}
+	}
+}

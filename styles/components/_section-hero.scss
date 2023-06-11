@@ -1,30 +1,57 @@
 @use "../global/index" as *;
 
 section#section-hero {
-	// background-color: rgba(255, 0, 0, 0.1);
-	max-width: 50%;
+	--section-width: 50%;
+	
+	--heading-size: 44px;
+	--heading-weight: ;
+	--heading-margin: 1em;
+
+	--paragraph-size: 18.5px;
+	--paragraph-weight: 500;
+	--paragraph-leading: 1.75;
+	--paragraph-margin: 2em;
+
+	--button-gap: 2.5em;
+	--button-padding: 1em 4em;
+
+
+	$section-width: var(--section-width);
+	
+	$heading-size: var(--heading-size);
+	$heading-weight: var(--heading-weight);
+	$heading-margin: var(--heading-margin);
+
+	$paragraph-size: var(--paragraph-size);
+	$paragraph-weight: var(--paragraph-weight);
+	$paragraph-leading: var(--paragraph-leading);
+	$paragraph-margin: var(--paragraph-margin);
+
+	$button-gap: var(--button-gap);
+	$button-padding: var(--button-padding);
+
+	max-width: $section-width;
 
 	> h1 {
-		font-size: 44px;
+		font-size: $heading-size;
 		letter-spacing: 0.5px;
-		margin-bottom: 1em;
+		margin-bottom: $heading-margin;
 	}
 
 	> p {
-		text-align: justify;
-		font-size: 18.5px;
-		font-weight: 500;
+		font-size: $paragraph-size;
+		font-weight: $paragraph-weight;
 		letter-spacing: 0.5px;
-		line-height: 1.75;
-		margin-bottom: 2em;
+		line-height: $paragraph-leading;
+		margin-bottom: $paragraph-margin;
 	}
 
 	> .hero-buttons {
 		@include flex(flex-start);
-		gap: 2.5em;
+		gap: $button-gap;
 
 		> .btn {
-			padding: 1em 4em;
+			padding: $button-padding;
 			font-weight: 600;
 			letter-spacing: 1px;
 		}
