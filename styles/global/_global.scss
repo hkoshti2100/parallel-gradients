@@ -19,6 +19,15 @@ main {
 	@include flex(flex-start);
 }
 
+header, main, footer {
+	opacity: 1;
+	transition: opacity 375ms ease;
+
+	&.transparent {
+		opacity: 0;
+	}
+}
+
 h1, .h1 {
 	margin: 0;
 }

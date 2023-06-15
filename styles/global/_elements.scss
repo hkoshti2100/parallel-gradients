@@ -2,7 +2,8 @@
 @use "mixins" as *;
 @use "classes" as *;
 
-header a {
+header a,
+#nav-mobile .nav-links > a {
 	text-decoration: none;
 	color: $color-dark;
 	font-family: $font-primary;
@@ -19,13 +20,21 @@ header a {
 }
 
 .btn-primary {
-	@extend .btn;
 	background-color: $color-dark;
 	color: $color-light;
 }
 
 .btn-secondary {
-	@extend .btn;
-	@include border-inside(2px, solid, $color-dark, $pill: true);
+	@include inset-border(2px, black);
 	color: $color-dark;
+}
+
+body > .modal-backdrop {
+	position: fixed;
+	@include inset(0);
+	display: none;
+
+	&.open {
+		display: block;
+	}
 }

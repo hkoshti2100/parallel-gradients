@@ -1,7 +1,7 @@
 @use "../global/index" as *;
 
 section#section-hero {
-	--section-width: 50%;
+	--section-width: max(720px, 50%);
 	
 	--heading-size: 44px;
 	--heading-weight: ;
